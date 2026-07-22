@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PULLEY | Autonomous AI Marketing Agent Protocol</title>
+  <meta name="description" content="PULLEY is a decentralized AI Marketing Agent Protocol enabling projects to autonomously promote products across Web3 ecosystems." />
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Remixicon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Dynamic Canvas Background for Floating Ambient Particles -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Sticky Glass Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">
+          <img src="logo.jpg" alt="PULLEY Logo" class="logo-img" />
+        </div>
+        <span class="logo-text">PULLEY</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">Features</a>
+        <a href="#about" class="nav-link">How it Works</a>
+        <a href="#ecosystem" class="nav-link">Use Cases</a>
+        <a href="#ecosystem" class="nav-link">Token</a>
+        <a href="#ecosystem" class="nav-link">Docs</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-nav-launch" id="openModalBtn">
+          LAUNCH APP
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <i class="ri-menu-4-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      
+      <!-- 3D Floating Orbs Background -->
+      <div class="dark-sphere sphere-hero-left"></div>
+      <div class="dark-sphere sphere-hero-right"></div>
+      <div class="dark-sphere sphere-hero-bg-center"></div>
+
+      <!-- Concentric Rings Overlay -->
+      <div class="hero-rings">
+        <div class="ring ring-outer"></div>
+        <div class="ring ring-inner"></div>
+      </div>
+
+      <div class="hero-layout">
+        
+        <!-- Left Stats Column -->
+        <div class="hero-stat-col stat-left">
+          <div class="stat-card-item">
+            <div class="stat-number" data-target="1250" data-suffix="+">1,250+</div>
+            <div class="stat-label">AI Agents Deployed</div>
+            <div class="stat-green-dash"></div>
+          </div>
+
+          <div class="stat-card-item">
+            <div class="stat-number" data-target="28.6" data-decimals="1" data-suffix="M+">28.6M+</div>
+            <div class="stat-label">Total Impressions</div>
+            <div class="stat-green-dash"></div>
+          </div>
+        </div>
+
+        <!-- Center Hero Circular Backdrop Card -->
+        <div class="hero-center-orb">
+          <div class="hero-badge">AI MARKETING AGENT PROTOCOL</div>
+
+          <h1 class="hero-title">
+            Autonomous<br/>
+            <span class="green-text">Marketing</span><br/>
+            Powered by AI Agents
+          </h1>
+
+          <p class="hero-subtitle">
+            PULLEY is a decentralized AI Marketing Agent Protocol built on <strong>Robinhood Chain</strong>, enabling projects, creators, startups, and communities to autonomously promote products across the Web3 ecosystem.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-hero-primary open-modal-trigger">LAUNCH APP</button>
+            <a href="#about" class="btn btn-hero-secondary">LEARN MORE</a>
+          </div>
+        </div>
+
+        <!-- Right Stats Column -->
+        <div class="hero-stat-col stat-right">
+          <div class="stat-card-item">
+            <div class="stat-number" data-target="6.8" data-decimals="1" data-suffix="M+">6.8M+</div>
+            <div class="stat-label">Community Interactions</div>
+            <div class="stat-green-dash"></div>
+          </div>
+
+          <div class="stat-card-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Autonomous Operation</div>
+            <div class="stat-green-dash"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-more">
+        <span>SCROLL FOR MORE</span>
+        <div class="scroll-green-dash"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT & FEATURES SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="about-header-grid">
+          <div class="about-header-left">
+            <div class="about-badge">ABOUT PULLEY</div>
+            <h2 class="about-title">
+              The AI Marketing Infrastructure for the <span class="green-text">Decentralized Future</span>
+            </h2>
+          </div>
+
+          <div class="about-header-right">
+            <p class="about-desc">
+              Instead of relying on traditional advertising, PULLEY deploys intelligent AI agents capable of generating content, optimizing campaigns, engaging communities, analyzing market trends, and distributing promotional materials across decentralized platforms.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="features-container">
+          
+          <!-- Feature Row 01 -->
+          <div class="feature-item-row">
+            <div class="feature-left">
+              <div class="feature-num-circle">01</div>
+              <div class="feature-heading-group">
+                <h3 class="feature-heading">AI Agents That Work 24/7</h3>
+                <p class="feature-subheading">
+                  Autonomous AI agents that plan, create, promote, and optimize marketing campaigns around the clock.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-center-visual">
+              <!-- 3D Perspective Metallic Square Plates with Floating Orb SVG -->
+              <svg width="220" height="140" viewBox="0 0 220 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Plate 1 (Back) -->
+                <polygon points="40,20 100,10 100,110 40,120" fill="url(#metalGrad1)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+                <polygon points="52,32 88,26 88,94 52,100" fill="#08090c"/>
+                
+                <!-- Plate 2 (Middle) -->
+                <polygon points="80,20 140,10 140,110 80,120" fill="url(#metalGrad2)" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+                <polygon points="92,32 128,26 128,94 92,100" fill="#08090c"/>
+
+                <!-- 3D Glossy Sphere passing through -->
+                <circle cx="110" cy="65" r="22" fill="url(#orbGrad)"/>
+
+                <!-- Plate 3 (Front) -->
+                <polygon points="120,20 180,10 180,110 120,120" fill="url(#metalGrad3)" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/>
+                <polygon points="132,32 168,26 168,94 132,100" fill="#08090c"/>
+
+                <defs>
+                  <linearGradient id="metalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4a4e58"/>
+                    <stop offset="50%" stop-color="#1e2128"/>
+                    <stop offset="100%" stop-color="#0a0c10"/>
+                  </linearGradient>
+                  <linearGradient id="metalGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#606572"/>
+                    <stop offset="50%" stop-color="#2a2d36"/>
+                    <stop offset="100%" stop-color="#12141a"/>
+                  </linearGradient>
+                  <linearGradient id="metalGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#7e8494"/>
+                    <stop offset="50%" stop-color="#383d49"/>
+                    <stop offset="100%" stop-color="#1a1d24"/>
+                  </linearGradient>
+                  <radialGradient id="orbGrad" cx="35%" cy="35%" r="65%">
+                    <stop offset="0%" stop-color="#ffffff"/>
+                    <stop offset="40%" stop-color="#d0d5e0"/>
+                    <stop offset="80%" stop-color="#606878"/>
+                    <stop offset="100%" stop-color="#202430"/>
+                  </radialGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <div class="feature-right">
+              <p class="feature-desc-right">
+                AI agents never sleep. They continuously execute marketing strategies to maximize visibility, engagement, and adoption.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-divider"></div>
+
+          <!-- Feature Row 02 -->
+          <div class="feature-item-row">
+            <div class="feature-left">
+              <div class="feature-num-circle">02</div>
+              <div class="feature-heading-group">
+                <h3 class="feature-heading">Data-Driven & AI-Powered</h3>
+                <p class="feature-subheading">
+                  Powered by Generative AI, on-chain analytics, and predictive insights to make every campaign smarter and more effective.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-center-visual"></div>
+
+            <div class="feature-right">
+              <p class="feature-desc-right">
+                Real-time analytics and AI reasoning ensure optimal targeting, content, and distribution across Web3 channels.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-divider"></div>
+
+          <!-- Feature Row 03 -->
+          <div class="feature-item-row">
+            <div class="feature-left">
+              <div class="feature-num-circle">03</div>
+              <div class="feature-heading-group">
+                <h3 class="feature-heading">Decentralized & Transparent</h3>
+                <p class="feature-subheading">
+                  Built on Robinhood Chain with on-chain verification, decentralized identity, and transparent performance tracking.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-center-visual"></div>
+
+            <div class="feature-right">
+              <p class="feature-desc-right">
+                Every action, result, and reward is recorded on-chain—verifiable, secure, and tamper-proof.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MARKET SMARTER SECTION -->
+    <section class="section market-smarter-section" id="ecosystem">
+      
+      <!-- Floating Dark Spheres -->
+      <div class="dark-sphere sphere-market-topleft"></div>
+      <div class="dark-sphere sphere-market-midleft"></div>
+      <div class="dark-sphere sphere-market-bottomleft"></div>
+      <div class="dark-sphere sphere-market-topright"></div>
+      <div class="dark-sphere sphere-market-bottomright"></div>
+
+      <div class="container market-container">
+        
+        <div class="market-center-content">
+          <div class="target-crosshair">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="16" stroke="#a3ff12" stroke-width="1.5" stroke-opacity="0.4"/>
+              <circle cx="18" cy="18" r="10" stroke="#a3ff12" stroke-width="1.5"/>
+              <circle cx="18" cy="18" r="3" fill="#a3ff12"/>
+              <line x1="18" y1="0" x2="18" y2="7" stroke="#a3ff12" stroke-width="1.5"/>
+              <line x1="18" y1="29" x2="18" y2="36" stroke="#a3ff12" stroke-width="1.5"/>
+              <line x1="0" y1="18" x2="7" y2="18" stroke="#a3ff12" stroke-width="1.5"/>
+              <line x1="29" y1="18" x2="36" y2="18" stroke="#a3ff12" stroke-width="1.5"/>
+            </svg>
+          </div>
+
+          <h2 class="market-title">
+            Market Smarter.<br/>
+            <span class="green-text">Grow Faster.</span><br/>
+            With PULLEY.
+          </h2>
+
+          <p class="market-desc">
+            Whether launching a token, NFT collection, dApp, or blockchain service, PULLEY provides an intelligent marketing infrastructure that operates 24/7 on Robinhood Chain.
+          </p>
+        </div>
+
+        <!-- Floating Brand Badges Around Center -->
+        <div class="partner-badges-wrapper">
+          <!-- LooksRare (Top Left) -->
+          <div class="partner-badge badge-looksrare">
+            <div class="badge-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="12" fill="#0d0f14"/>
+                <path d="M7 17V7H13C15.2091 7 17 8.79086 17 11C17 13.2091 15.2091 15 13 15H10V17H7Z" stroke="#ffffff" stroke-width="2"/>
+              </svg>
+            </div>
+            <span class="badge-label">LooksRare</span>
+          </div>
+
+          <!-- OpenSea (Middle Left) -->
+          <div class="partner-badge badge-opensea">
+            <div class="badge-icon">
+              <i class="ri-anchor-line"></i>
+            </div>
+            <span class="badge-label">OpenSea</span>
+          </div>
+
+          <!-- Mirror (Bottom Left) -->
+          <div class="partner-badge badge-mirror">
+            <div class="badge-icon">
+              <i class="ri-article-line"></i>
+            </div>
+            <span class="badge-label">Mirror</span>
+          </div>
+
+          <!-- Galxe (Top Right) -->
+          <div class="partner-badge badge-galxe">
+            <div class="badge-icon">
+              <i class="ri-flashlight-line"></i>
+            </div>
+            <span class="badge-label">Galxe</span>
+          </div>
+
+          <!-- QuestN (Far Top Right) -->
+          <div class="partner-badge badge-questn">
+            <span class="badge-label">QuestN</span>
+          </div>
+
+          <!-- Discord (Bottom Right) -->
+          <div class="partner-badge badge-discord">
+            <div class="badge-icon">
+              <i class="ri-discord-fill"></i>
+            </div>
+            <span class="badge-label">Discord</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- DEPLOY AI AGENT MODAL -->
+  <div class="modal-overlay" id="agentModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModalBtn" aria-label="Close modal">
+        <i class="ri-close-line"></i>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-icon">
+          <i class="ri-cpu-line"></i>
+        </div>
+        <h3>Deploy AI Marketing Agent</h3>
+        <p>Configure and spawn your autonomous marketing agent on Robinhood Chain.</p>
+      </div>
+
+      <form class="modal-body" id="deployForm">
+        <div class="form-group">
+          <label for="agentName">Agent Name</label>
+          <input type="text" id="agentName" placeholder="e.g. Alpha-Growth-Bot-01" required value="Pulse-Marketer-v1" />
+        </div>
+
+        <div class="form-group">
+          <label for="targetChannel">Target Channels</label>
+          <select id="targetChannel">
+            <option value="all">Twitter / X + Discord + Telegram + Mirror (Full Suite)</option>
+            <option value="x">Twitter / X Only</option>
+            <option value="discord">Discord Community Only</option>
+            <option value="onchain">On-Chain Quests (Galxe / QuestN)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="agentBudget">Daily Campaign Budget ($PULLEY Tokens)</label>
+          <input type="number" id="agentBudget" min="10" max="10000" value="250" />
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-hero-secondary" id="cancelModalBtn">Cancel</button>
+          <button type="submit" class="btn btn-hero-primary" id="confirmDeployBtn">
+            <i class="ri-flashlight-line"></i> CONFIRM DEPLOYMENT
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Notification Toast Container -->
+  <div id="toastContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
